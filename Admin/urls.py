@@ -21,5 +21,6 @@ from Admin import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index')
+    path('', views.index, name='index'),
+    path('addrecord/',views.add_record, name='add_record')
 ]
